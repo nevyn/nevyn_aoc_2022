@@ -12,7 +12,7 @@ fn main() -> Result<(), Box<dyn Error>>
     let mut elves: Vec<Elf> = Vec::new();
     let mut current_elf = Elf { cals: 0 };
 
-    let file = File::open("input.txt")?;
+    let file = File::open("aoc01/input.txt")?;
     let lines = io::BufReader::new(file).lines();
     for line in lines
     {
